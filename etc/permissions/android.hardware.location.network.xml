@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Spreadtrum Communication Inc. -->
+
+<!-- These are the location features for devices that do not include GPS. Note
+     that network location is required for all devices. -->
+<permissions>
+    <!-- Disable the networklocation feature in default, you can gather it
+         by inherit-product device/sample/products/location_overlay.mk -->
+    <feature name="android.hardware.location.network" />
+</permissions>
