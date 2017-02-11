@@ -1,4 +1,4 @@
-LOCAL_PATH := vendor/samsung/grandprimeve3g
+LOCAL_PATH := vendor/dexp/el350
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/sensorservice:system/bin/sensorservice \
@@ -39,3 +39,6 @@ lib \
 usr \
 vendor \
 xbin
+
+PRODUCT_COPY_FILES += \
+    $(foreach f,$(PROPRIETARY_FILES),vendor/dexp/el350/$(f):system/$(f))
